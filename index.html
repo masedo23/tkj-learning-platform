@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi TKJ - SMK</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    animation: {
+                        'accordion': 'accordion 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
+                    },
+                    keyframes: {
+                        accordion: {
+                            '0%': { 'max-height': '0px' },
+                            '100%': { 'max-height': '1500px' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 py-4 px-4 sm:px-6 flex flex-col min-h-screen">
+    <div class="flex-1">
+        <div class="max-w-2xl mx-auto">
+            <!-- Header -->
+            <header class="text-center mb-8 p-6 bg-white rounded-2xl shadow-xl shadow-slate-200/50">
+                <h1 class="text-2xl sm:text-3xl md:text-4xl font-semibold gradient-text mb-3 leading-tight">
+                    TKJ Roadmap
+                </h1>
+                <p class="text-slate-600 text-lg font-medium">Tempat skalputnya anak tkj</p>
+            </header>
+
+            <!-- Kelas Navigation -->
+            <nav class="flex gap-3 mb-6 overflow-x-auto pb-3 -mx-4 px-4 scrollbar-hide">
+                <button
+                    class="kelas-tab px-5 py-2.5 bg-gradient-to-r from-indigo-500 to-cyan-500 text-white rounded-xl font-medium text-sm shadow-sm transition-all duration-300 whitespace-nowrap flex-shrink-0"
+                    data-kelas="kelas10">
+                    Kelas X
+                </button>
+
+                <button
+                    class="kelas-tab px-5 py-2.5 bg-slate-100 text-slate-700 rounded-xl font-medium text-sm shadow-sm transition-all duration-300 whitespace-nowrap flex-shrink-0"
+                    data-kelas="kelas11">
+                    Kelas XI
+                </button>
+
+                <button
+                    class="kelas-tab px-5 py-2.5 bg-slate-100 text-slate-700 rounded-xl font-medium text-sm shadow-sm transition-all duration-300 whitespace-nowrap flex-shrink-0"
+                    data-kelas="kelas12">
+                    Kelas XII
+                </button>
+            </nav>
+
+            <!-- Kelas 10 -->
+            <div id="kelas10" class="kelas-content">
+                <div class="flex gap-2 mb-5">
+                    <button
+                        class="semester-tab flex-1 px-4 py-3 bg-gradient-to-r from-emerald-500 to-emerald-600 text-white rounded-xl font-medium text-sm shadow-lg hover:shadow-xl transition-all duration-300 active:scale-[0.98]"
+                        data-semester="semester1-k10">
+                        Semester I
+                    </button>
+                    <button
+                        class="semester-tab flex-1 px-4 py-3 bg-slate-100 text-slate-600 rounded-xl font-medium text-sm shadow-sm hover:shadow-md hover:bg-slate-200 transition-all duration-300"
+                        data-semester="semester2-k10">
+                        Semester II
+                    </button>
+                </div>
+
+                <main id="semester1-k10" class="main-content space-y-4">
+
+                    <div class="text-center py-12">
+                        <div class="w-20 h-20 mx-auto mb-4 bg-slate-100 rounded-2xl flex items-center justify-center">
+                            <i class="fas fa-clock text-2xl text-slate-400"></i>
+                        </div>
+                        <h3 class="text-slate-600 font-medium mb-2">Semester I Kelas X</h3>
+                        <p class="text-slate-500 text-sm">Materi akan segera ditambahkan</p>
+                    </div>
+                </main>
+
+                <main id="semester2-k10" class="main-content space-y-4 hidden">
+                    <div
+                        class="accordion-item bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+                        <div class="accordion-header px-6 py-5 cursor-pointer flex items-center justify-between hover:bg-slate-50 transition-colors"
+                            onclick="toggleAccordion(this)">
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="w-8 h-8 bg-gradient-to-br from-indigo-500 to-cyan-500 rounded-lg flex items-center justify-center text-white text-xs font-bold shadow-lg">
+                                    1
+                                </div>
+                                <div class="font-medium text-slate-900 text-base leading-tight">IP Address & Subnetting
+                                    Dasar
+                                </div>
+                            </div>
+                            <button
+                                class="w-10 h-10 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-500 flex items-center justify-center transition-all duration-200 group">
+                                <i
+                                    class="fas fa-chevron-down transition-transform duration-300 group-hover:scale-110"></i>
+                            </button>
+                        </div>
+                        <div
+                            class="accordion-content max-h-0 overflow-hidden bg-gradient-to-b from-slate-50/50 to-transparent">
+                            <div class="content-section pt-6 pb-4 px-6 border-t border-slate-100 last:border-b">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <div
+                                        class="w-9 h-9 bg-gradient-to-br from-amber-500 to-orange-500 rounded-xl flex items-center justify-center text-white shadow-lg">
+                                        <i class="fas fa-bullseye text-sm"></i>
+                                    </div>
+                                    <div class="font-medium text-slate-900 text-sm">Tujuan Pembelajaran</div>
+                                </div>
+                                <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                    Memahami konsep IP Address dan mampu melakukan subnetting sederhana.
+                                </p>
+                            </div>
+
+                            <div class="content-section pt-6 pb-4 px-6 border-t border-slate-100 last:border-b">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <div
+                                        class="w-9 h-9 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-xl flex items-center justify-center text-white shadow-lg">
+                                        <i class="fas fa-book text-sm"></i>
+                                    </div>
+                                    <div class="font-medium text-slate-900 text-sm">Materi</div>
+                                </div>
+                                <ul class="space-y-2 mb-4">
+                                    <li
+                                        class="relative pl-6 text-sm text-slate-700 before:absolute before:left-0 before:text-indigo-500 before:font-bold before:content-['▸']">
+                                        Pengertian IP Address</li>
+                                    <li
+                                        class="relative pl-6 text-sm text-slate-700 before:absolute before:left-0 before:text-indigo-500 before:font-bold before:content-['▸']">
+                                        IPv4 dan struktur IP</li>
+                                    <li
+                                        class="relative pl-6 text-sm text-slate-700 before:absolute before:left-0 before:text-indigo-500 before:font-bold before:content-['▸']">
+                                        Network ID & Host ID</li>
+                                    <li
+                                        class="relative pl-6 text-sm text-slate-700 before:absolute before:left-0 before:text-indigo-500 before:font-bold before:content-['▸']">
+                                        Subnet mask</li>
+                                    <li
+                                        class="relative pl-6 text-sm text-slate-700 before:absolute before:left-0 before:text-indigo-500 before:font-bold before:content-['▸']">
+                                        Subnetting dasar (CIDR)</li>
+                                    <li
+                                        class="relative pl-6 text-sm text-slate-700 before:absolute before:left-0 before:text-indigo-500 before:font-bold before:content-['▸']">
+                                        Latihan pembagian IP sederhana</li>
+                                </ul>
+                                <a href="#"
+                                    class="pdf-button inline-flex items-center gap-2 px-4 py-2.5 bg-white/80 backdrop-blur-sm text-slate-800 font-medium text-sm rounded-xl shadow-xl hover:shadow-2xl hover:-translate-y-0.5 hover:bg-white/100 border border-slate-200/50 transition-all duration-300">
+                                    <i class="fas fa-file-pdf text-slate-500"></i>
+                                    <span>PDF Materi</span>
+                                </a>
+                            </div>
+
+                            <div class="content-section pt-6 pb-6 px-6 border-t border-slate-100">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <div
+                                        class="w-9 h-9 bg-gradient-to-br from-red-500 to-rose-500 rounded-xl flex items-center justify-center text-white shadow-lg">
+                                        <i class="fas fa-edit text-sm"></i>
+                                    </div>
+                                    <div class="font-medium text-slate-900 text-sm">Latihan</div>
+                                </div>
+                                <!-- <div class="space-y-3">
+                                    <div
+                                        class="exercise-item p-4 bg-gradient-to-r from-rose-50/50 to-red-50/30 rounded-xl border-l-4 border-red-400 shadow-sm hover:shadow-md hover:-translate-x-1 transition-all duration-200 backdrop-blur-sm">
+                                        <div class="flex items-center gap-3">
+                                            <div
+                                                class="w-7 h-7 bg-rose-100 text-rose-600 rounded-full flex items-center justify-center font-semibold text-xs shadow-md flex-shrink-0 mt-0.5">
+                                                1
+                                            </div>
+                                            <div>
+                                                <p class="font-semibold text-slate-900 text-sm leading-tight">Apa
+                                                    perbedaan
+                                                    LAN dan WAN?</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pertemuan 2 -->
+                    <div
+                        class="accordion-item bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+                        <div class="accordion-header px-6 py-5 cursor-pointer flex items-center justify-between hover:bg-slate-50 transition-colors"
+                            onclick="toggleAccordion(this)">
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="w-8 h-8 flex-shrink-0 bg-gradient-to-br from-indigo-500 to-cyan-500 rounded-lg flex items-center justify-center text-white text-xs font-bold shadow-lg">
+                                    2
+                                </div>
+                                <div class="font-medium text-slate-900 text-base leading-tight">
+                                    Perangkat Jaringan & Fungsinya
+                                </div>
+                            </div>
+                            <button
+                                class="w-10 h-10 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-500 flex items-center justify-center transition-all duration-200 group">
+                                <i
+                                    class="fas fa-chevron-down transition-transform duration-300 group-hover:scale-110"></i>
+                            </button>
+                        </div>
+                        <div
+                            class="accordion-content max-h-0 overflow-hidden bg-gradient-to-b from-slate-50/50 to-transparent">
+                            <div class="content-section pt-6 pb-4 px-6 border-t border-slate-100 last:border-b">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <div
+                                        class="w-9 h-9 bg-gradient-to-br from-amber-500 to-orange-500 rounded-xl flex items-center justify-center text-white shadow-lg">
+                                        <i class="fas fa-bullseye text-sm"></i>
+                                    </div>
+                                    <div class="font-medium text-slate-900 text-sm">Tujuan Pembelajaran</div>
+                                </div>
+                                <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                    Memahami fungsi dan cara kerja perangkat jaringan.
+                                </p>
+                            </div>
+
+                            <div class="content-section pt-6 pb-4 px-6 border-t border-slate-100 last:border-b">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <div
+                                        class="w-9 h-9 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-xl flex items-center justify-center text-white shadow-lg">
+                                        <i class="fas fa-book text-sm"></i>
+                                    </div>
+                                    <div class="font-medium text-slate-900 text-sm">Materi</div>
+                                </div>
+                                <ul class="space-y-2 mb-4">
+                                    <li
+                                        class="relative pl-6 text-sm text-slate-700 before:absolute before:left-0 before:text-indigo-500 before:font-bold before:content-['▸']">
+                                        Router
+                                    </li>
+                                    <li
+                                        class="relative pl-6 text-sm text-slate-700 before:absolute before:left-0 before:text-indigo-500 before:font-bold before:content-['▸']">
+                                        Switch
+                                    </li>
+                                    <li
+                                        class="relative pl-6 text-sm text-slate-700 before:absolute before:left-0 before:text-indigo-500 before:font-bold before:content-['▸']">
+                                        Access Point
+                                    </li>
+                                    <li
+                                        class="relative pl-6 text-sm text-slate-700 before:absolute before:left-0 before:text-indigo-500 before:font-bold before:content-['▸']">
+                                        Modem
+                                    </li>
+                                    <li
+                                        class="relative pl-6 text-sm text-slate-700 before:absolute before:left-0 before:text-indigo-500 before:font-bold before:content-['▸']">
+                                        Kabel jaringan (UTP, Fiber Optic)
+                                    </li>
+                                    <li
+                                        class="relative pl-6 text-sm text-slate-700 before:absolute before:left-0 before:text-indigo-500 before:font-bold before:content-['▸']">
+                                        Perbedaan hub, switch, dan router
+                                    </li>
+                                </ul>
+                                <a href="#"
+                                    class="pdf-button inline-flex items-center gap-2 px-4 py-2.5 bg-white/80 backdrop-blur-sm text-slate-800 font-medium text-sm rounded-xl shadow-xl hover:shadow-2xl hover:-translate-y-0.5 hover:bg-white/100 border border-slate-200/50 transition-all duration-300">
+                                    <i class="fas fa-file-pdf text-slate-500"></i>
+                                    <span>PDF Materi</span>
+                                </a>
+                            </div>
+
+                            <div class="content-section pt-6 pb-6 px-6 border-t border-slate-100">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <div
+                                        class="w-9 h-9 bg-gradient-to-br from-red-500 to-rose-500 rounded-xl flex items-center justify-center text-white shadow-lg">
+                                        <i class="fas fa-edit text-sm"></i>
+                                    </div>
+                                    <div class="font-medium text-slate-900 text-sm">Latihan</div>
+                                </div>
+                                <!-- <div class="space-y-3">
+                                    <div
+                                        class="exercise-item p-4 bg-gradient-to-r from-rose-50/50 to-red-50/30 rounded-xl border-l-4 border-red-400 shadow-sm hover:shadow-md hover:-translate-x-1 transition-all duration-200 backdrop-blur-sm">
+                                        <div class="flex items-center gap-3">
+                                            <div
+                                                class="w-7 h-7 bg-rose-100 text-rose-600 rounded-full flex items-center justify-center font-semibold text-xs shadow-md flex-shrink-0 mt-0.5">
+                                                1
+                                            </div>
+                                            <div>
+                                                <p class="font-semibold text-slate-900 text-sm leading-tight">Apa
+                                                    perbedaan
+                                                    LAN dan WAN?</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pertemuan 3 -->
+                    <div
+                        class="accordion-item bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+                        <div class="accordion-header px-6 py-5 cursor-pointer flex items-center justify-between hover:bg-slate-50 transition-colors"
+                            onclick="toggleAccordion(this)">
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="w-8 h-8 flex-shrink-0 bg-gradient-to-br from-indigo-500 to-cyan-500 rounded-lg flex items-center justify-center text-white text-xs font-bold shadow-lg">
+                                    3
+                                </div>
+                                <div class="font-medium text-slate-900 text-base leading-tight">
+                                    Instalasi & Konfigurasi Jaringan Sederhana
+                                </div>
+                            </div>
+                            <button
+                                class="w-10 h-10 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-500 flex items-center justify-center transition-all duration-200 group">
+                                <i
+                                    class="fas fa-chevron-down transition-transform duration-300 group-hover:scale-110"></i>
+                            </button>
+                        </div>
+
+                        <div
+                            class="accordion-content max-h-0 overflow-hidden bg-gradient-to-b from-slate-50/50 to-transparent">
+
+                            <!-- Tujuan -->
+                            <div class="content-section pt-6 pb-4 px-6 border-t border-slate-100 last:border-b">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <div
+                                        class="w-9 h-9 bg-gradient-to-br from-amber-500 to-orange-500 rounded-xl flex items-center justify-center text-white shadow-lg">
+                                        <i class="fas fa-bullseye text-sm"></i>
+                                    </div>
+                                    <div class="font-medium text-slate-900 text-sm">Tujuan Pembelajaran</div>
+                                </div>
+                                <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                    Mampu membuat dan mengkonfigurasi jaringan LAN sederhana.
+                                </p>
+                            </div>
+
+                            <!-- Materi -->
+                            <div class="content-section pt-6 pb-4 px-6 border-t border-slate-100 last:border-b">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <div
+                                        class="w-9 h-9 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-xl flex items-center justify-center text-white shadow-lg">
+                                        <i class="fas fa-book text-sm"></i>
+                                    </div>
+                                    <div class="font-medium text-slate-900 text-sm">Materi</div>
+                                </div>
+
+                                <ul class="space-y-2 mb-4">
+                                    <li
+                                        class="relative pl-6 text-sm text-slate-700 before:absolute before:left-0 before:text-indigo-500 before:font-bold before:content-['▸']">
+                                        Instalasi kabel LAN (straight & crossover)
+                                    </li>
+                                    <li
+                                        class="relative pl-6 text-sm text-slate-700 before:absolute before:left-0 before:text-indigo-500 before:font-bold before:content-['▸']">
+                                        Konfigurasi IP Address di Windows & Linux
+                                    </li>
+                                    <li
+                                        class="relative pl-6 text-sm text-slate-700 before:absolute before:left-0 before:text-indigo-500 before:font-bold before:content-['▸']">
+                                        Sharing file & printer
+                                    </li>
+                                    <li
+                                        class="relative pl-6 text-sm text-slate-700 before:absolute before:left-0 before:text-indigo-500 before:font-bold before:content-['▸']">
+                                        Uji koneksi (ping, ipconfig, ifconfig)
+                                    </li>
+                                    <li
+                                        class="relative pl-6 text-sm text-slate-700 before:absolute before:left-0 before:text-indigo-500 before:font-bold before:content-['▸']">
+                                        Troubleshooting dasar jaringan
+                                    </li>
+                                </ul>
+
+                                <a href="#"
+                                    class="pdf-button inline-flex items-center gap-2 px-4 py-2.5 bg-white/80 backdrop-blur-sm text-slate-800 font-medium text-sm rounded-xl shadow-xl hover:shadow-2xl hover:-translate-y-0.5 hover:bg-white/100 border border-slate-200/50 transition-all duration-300">
+                                    <i class="fas fa-file-pdf text-slate-500"></i>
+                                    <span>PDF Materi</span>
+                                </a>
+                            </div>
+
+                            <!-- Latihan -->
+                            <div class="content-section pt-6 pb-6 px-6 border-t border-slate-100">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <div
+                                        class="w-9 h-9 bg-gradient-to-br from-red-500 to-rose-500 rounded-xl flex items-center justify-center text-white shadow-lg">
+                                        <i class="fas fa-edit text-sm"></i>
+                                    </div>
+                                    <div class="font-medium text-slate-900 text-sm">Latihan</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Pertemuan 4 -->
+                    <div
+                        class="accordion-item bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+                        <div class="accordion-header px-6 py-5 cursor-pointer flex items-center justify-between hover:bg-slate-50 transition-colors"
+                            onclick="toggleAccordion(this)">
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="w-8 h-8 flex-shrink-0 bg-gradient-to-br from-indigo-500 to-cyan-500 rounded-lg flex items-center justify-center text-white text-xs font-bold shadow-lg">
+                                    4
+                                </div>
+                                <div class="font-medium text-slate-900 text-base leading-tight">
+                                    Sistem Operasi Linux Dasar (Lanjutan)
+                                </div>
+                            </div>
+                            <button
+                                class="w-10 h-10 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-500 flex items-center justify-center transition-all duration-200 group">
+                                <i
+                                    class="fas fa-chevron-down transition-transform duration-300 group-hover:scale-110"></i>
+                            </button>
+                        </div>
+
+                        <div
+                            class="accordion-content max-h-0 overflow-hidden bg-gradient-to-b from-slate-50/50 to-transparent">
+
+                            <!-- Tujuan -->
+                            <div class="content-section pt-6 pb-4 px-6 border-t border-slate-100 last:border-b">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <div
+                                        class="w-9 h-9 bg-gradient-to-br from-amber-500 to-orange-500 rounded-xl flex items-center justify-center text-white shadow-lg">
+                                        <i class="fas fa-bullseye text-sm"></i>
+                                    </div>
+                                    <div class="font-medium text-slate-900 text-sm">Tujuan Pembelajaran</div>
+                                </div>
+                                <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                    Mampu menggunakan Linux untuk kebutuhan dasar administrasi.
+                                </p>
+                            </div>
+
+                            <!-- Materi -->
+                            <div class="content-section pt-6 pb-4 px-6 border-t border-slate-100 last:border-b">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <div
+                                        class="w-9 h-9 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-xl flex items-center justify-center text-white shadow-lg">
+                                        <i class="fas fa-book text-sm"></i>
+                                    </div>
+                                    <div class="font-medium text-slate-900 text-sm">Materi</div>
+                                </div>
+
+                                <ul class="space-y-2 mb-4">
+                                    <li
+                                        class="relative pl-6 text-sm text-slate-700 before:absolute before:left-0 before:text-indigo-500 before:font-bold before:content-['▸']">
+                                        Navigasi file system Linux
+                                    </li>
+                                    <li
+                                        class="relative pl-6 text-sm text-slate-700 before:absolute before:left-0 before:text-indigo-500 before:font-bold before:content-['▸']">
+                                        Perintah dasar (cd, ls, cp, mv, rm)
+                                    </li>
+                                    <li
+                                        class="relative pl-6 text-sm text-slate-700 before:absolute before:left-0 before:text-indigo-500 before:font-bold before:content-['▸']">
+                                        Manajemen user sederhana
+                                    </li>
+                                    <li
+                                        class="relative pl-6 text-sm text-slate-700 before:absolute before:left-0 before:text-indigo-500 before:font-bold before:content-['▸']">
+                                        Permission file (chmod)
+                                    </li>
+                                    <li
+                                        class="relative pl-6 text-sm text-slate-700 before:absolute before:left-0 before:text-indigo-500 before:font-bold before:content-['▸']">
+                                        Instalasi software di Linux
+                                    </li>
+                                </ul>
+
+                                <a href="#"
+                                    class="pdf-button inline-flex items-center gap-2 px-4 py-2.5 bg-white/80 backdrop-blur-sm text-slate-800 font-medium text-sm rounded-xl shadow-xl hover:shadow-2xl hover:-translate-y-0.5 hover:bg-white/100 border border-slate-200/50 transition-all duration-300">
+                                    <i class="fas fa-file-pdf text-slate-500"></i>
+                                    <span>PDF Materi</span>
+                                </a>
+                            </div>
+
+                            <!-- Latihan -->
+                            <div class="content-section pt-6 pb-6 px-6 border-t border-slate-100">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <div
+                                        class="w-9 h-9 bg-gradient-to-br from-red-500 to-rose-500 rounded-xl flex items-center justify-center text-white shadow-lg">
+                                        <i class="fas fa-edit text-sm"></i>
+                                    </div>
+                                    <div class="font-medium text-slate-900 text-sm">Latihan</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Pertemuan 5 -->
+                    <div
+                        class="accordion-item bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+                        <div class="accordion-header px-6 py-5 cursor-pointer flex items-center justify-between hover:bg-slate-50 transition-colors"
+                            onclick="toggleAccordion(this)">
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="w-8 h-8 flex-shrink-0 bg-gradient-to-br from-indigo-500 to-cyan-500 rounded-lg flex items-center justify-center text-white text-xs font-bold shadow-lg">
+                                    5
+                                </div>
+                                <div class="font-medium text-slate-900 text-base leading-tight">
+                                    Pengenalan Virtualisasi
+                                </div>
+                            </div>
+                            <button
+                                class="w-10 h-10 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-500 flex items-center justify-center transition-all duration-200 group">
+                                <i
+                                    class="fas fa-chevron-down transition-transform duration-300 group-hover:scale-110"></i>
+                            </button>
+                        </div>
+
+                        <div
+                            class="accordion-content max-h-0 overflow-hidden bg-gradient-to-b from-slate-50/50 to-transparent">
+
+                            <!-- Tujuan -->
+                            <div class="content-section pt-6 pb-4 px-6 border-t border-slate-100 last:border-b">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <div
+                                        class="w-9 h-9 bg-gradient-to-br from-amber-500 to-orange-500 rounded-xl flex items-center justify-center text-white shadow-lg">
+                                        <i class="fas fa-bullseye text-sm"></i>
+                                    </div>
+                                    <div class="font-medium text-slate-900 text-sm">Tujuan Pembelajaran</div>
+                                </div>
+                                <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                    Memahami konsep virtualisasi dan mampu membuat mesin virtual sederhana.
+                                </p>
+                            </div>
+
+                            <!-- Materi -->
+                            <div class="content-section pt-6 pb-4 px-6 border-t border-slate-100 last:border-b">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <div
+                                        class="w-9 h-9 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-xl flex items-center justify-center text-white shadow-lg">
+                                        <i class="fas fa-book text-sm"></i>
+                                    </div>
+                                    <div class="font-medium text-slate-900 text-sm">Materi</div>
+                                </div>
+
+                                <ul class="space-y-2 mb-4">
+                                    <li
+                                        class="relative pl-6 text-sm text-slate-700 before:absolute before:left-0 before:text-indigo-500 before:font-bold before:content-['▸']">
+                                        Pengertian virtualisasi
+                                    </li>
+                                    <li
+                                        class="relative pl-6 text-sm text-slate-700 before:absolute before:left-0 before:text-indigo-500 before:font-bold before:content-['▸']">
+                                        Fungsi dan manfaat virtual machine
+                                    </li>
+                                    <li
+                                        class="relative pl-6 text-sm text-slate-700 before:absolute before:left-0 before:text-indigo-500 before:font-bold before:content-['▸']">
+                                        Pengenalan VirtualBox / VMware
+                                    </li>
+                                    <li
+                                        class="relative pl-6 text-sm text-slate-700 before:absolute before:left-0 before:text-indigo-500 before:font-bold before:content-['▸']">
+                                        Membuat mesin virtual (Windows/Linux)
+                                    </li>
+                                    <li
+                                        class="relative pl-6 text-sm text-slate-700 before:absolute before:left-0 before:text-indigo-500 before:font-bold before:content-['▸']">
+                                        Simulasi jaringan sederhana menggunakan VM
+                                    </li>
+                                </ul>
+
+                                <a href="#"
+                                    class="pdf-button inline-flex items-center gap-2 px-4 py-2.5 bg-white/80 backdrop-blur-sm text-slate-800 font-medium text-sm rounded-xl shadow-xl hover:shadow-2xl hover:-translate-y-0.5 hover:bg-white/100 border border-slate-200/50 transition-all duration-300">
+                                    <i class="fas fa-file-pdf text-slate-500"></i>
+                                    <span>PDF Materi</span>
+                                </a>
+                            </div>
+
+                            <!-- Latihan -->
+                            <div class="content-section pt-6 pb-6 px-6 border-t border-slate-100">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <div
+                                        class="w-9 h-9 bg-gradient-to-br from-red-500 to-rose-500 rounded-xl flex items-center justify-center text-white shadow-lg">
+                                        <i class="fas fa-edit text-sm"></i>
+                                    </div>
+                                    <div class="font-medium text-slate-900 text-sm">Latihan</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Pertemuan 6 -->
+                    <div
+                        class="accordion-item bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+                        <div class="accordion-header px-6 py-5 cursor-pointer flex items-center justify-between hover:bg-slate-50 transition-colors"
+                            onclick="toggleAccordion(this)">
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="w-8 h-8 flex-shrink-0 bg-gradient-to-br from-indigo-500 to-cyan-500 rounded-lg flex items-center justify-center text-white text-xs font-bold shadow-lg">
+                                    6
+                                </div>
+                                <div class="font-medium text-slate-900 text-base leading-tight">
+                                    Dasar Keamanan Jaringan
+                                </div>
+                            </div>
+                            <button
+                                class="w-10 h-10 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-500 flex items-center justify-center transition-all duration-200 group">
+                                <i
+                                    class="fas fa-chevron-down transition-transform duration-300 group-hover:scale-110"></i>
+                            </button>
+                        </div>
+
+                        <div
+                            class="accordion-content max-h-0 overflow-hidden bg-gradient-to-b from-slate-50/50 to-transparent">
+
+                            <!-- Tujuan -->
+                            <div class="content-section pt-6 pb-4 px-6 border-t border-slate-100 last:border-b">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <div
+                                        class="w-9 h-9 bg-gradient-to-br from-amber-500 to-orange-500 rounded-xl flex items-center justify-center text-white shadow-lg">
+                                        <i class="fas fa-bullseye text-sm"></i>
+                                    </div>
+                                    <div class="font-medium text-slate-900 text-sm">Tujuan Pembelajaran</div>
+                                </div>
+                                <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                    Memahami konsep dasar keamanan jaringan dan mampu mengidentifikasi ancaman umum.
+                                </p>
+                            </div>
+
+                            <!-- Materi -->
+                            <div class="content-section pt-6 pb-4 px-6 border-t border-slate-100 last:border-b">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <div
+                                        class="w-9 h-9 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-xl flex items-center justify-center text-white shadow-lg">
+                                        <i class="fas fa-book text-sm"></i>
+                                    </div>
+                                    <div class="font-medium text-slate-900 text-sm">Materi</div>
+                                </div>
+
+                                <ul class="space-y-2 mb-4">
+                                    <li
+                                        class="relative pl-6 text-sm text-slate-700 before:absolute before:left-0 before:text-indigo-500 before:font-bold before:content-['▸']">
+                                        Pengertian cybersecurity
+                                    </li>
+                                    <li
+                                        class="relative pl-6 text-sm text-slate-700 before:absolute before:left-0 before:text-indigo-500 before:font-bold before:content-['▸']">
+                                        Jenis ancaman (virus, malware, phishing)
+                                    </li>
+                                    <li
+                                        class="relative pl-6 text-sm text-slate-700 before:absolute before:left-0 before:text-indigo-500 before:font-bold before:content-['▸']">
+                                        Konsep dasar firewall
+                                    </li>
+                                    <li
+                                        class="relative pl-6 text-sm text-slate-700 before:absolute before:left-0 before:text-indigo-500 before:font-bold before:content-['▸']">
+                                        Keamanan password (strong password)
+                                    </li>
+                                    <li
+                                        class="relative pl-6 text-sm text-slate-700 before:absolute before:left-0 before:text-indigo-500 before:font-bold before:content-['▸']">
+                                        Backup dan keamanan data
+                                    </li>
+                                </ul>
+
+                                <a href="#"
+                                    class="pdf-button inline-flex items-center gap-2 px-4 py-2.5 bg-white/80 backdrop-blur-sm text-slate-800 font-medium text-sm rounded-xl shadow-xl hover:shadow-2xl hover:-translate-y-0.5 hover:bg-white/100 border border-slate-200/50 transition-all duration-300">
+                                    <i class="fas fa-file-pdf text-slate-500"></i>
+                                    <span>PDF Materi</span>
+                                </a>
+                            </div>
+
+                            <!-- Latihan -->
+                            <div class="content-section pt-6 pb-6 px-6 border-t border-slate-100">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <div
+                                        class="w-9 h-9 bg-gradient-to-br from-red-500 to-rose-500 rounded-xl flex items-center justify-center text-white shadow-lg">
+                                        <i class="fas fa-edit text-sm"></i>
+                                    </div>
+                                    <div class="font-medium text-slate-900 text-sm">Latihan</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Pertemuan 7 -->
+                    <div
+                        class="accordion-item bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+                        <div class="accordion-header px-6 py-5 cursor-pointer flex items-center justify-between hover:bg-slate-50 transition-colors"
+                            onclick="toggleAccordion(this)">
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="w-8 h-8 flex-shrink-0 bg-gradient-to-br from-indigo-500 to-cyan-500 rounded-lg flex items-center justify-center text-white text-xs font-bold shadow-lg">
+                                    7
+                                </div>
+                                <div class="font-medium text-slate-900 text-base leading-tight">
+                                    Dasar Dokumentasi Teknis
+                                </div>
+                            </div>
+                            <button
+                                class="w-10 h-10 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-500 flex items-center justify-center transition-all duration-200 group">
+                                <i
+                                    class="fas fa-chevron-down transition-transform duration-300 group-hover:scale-110"></i>
+                            </button>
+                        </div>
+
+                        <div
+                            class="accordion-content max-h-0 overflow-hidden bg-gradient-to-b from-slate-50/50 to-transparent">
+
+                            <!-- Tujuan -->
+                            <div class="content-section pt-6 pb-4 px-6 border-t border-slate-100 last:border-b">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <div
+                                        class="w-9 h-9 bg-gradient-to-br from-amber-500 to-orange-500 rounded-xl flex items-center justify-center text-white shadow-lg">
+                                        <i class="fas fa-bullseye text-sm"></i>
+                                    </div>
+                                    <div class="font-medium text-slate-900 text-sm">Tujuan Pembelajaran</div>
+                                </div>
+                                <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                    Mampu membuat dokumentasi teknis sederhana untuk instalasi dan konfigurasi jaringan.
+                                </p>
+                            </div>
+
+                            <!-- Materi -->
+                            <div class="content-section pt-6 pb-4 px-6 border-t border-slate-100 last:border-b">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <div
+                                        class="w-9 h-9 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-xl flex items-center justify-center text-white shadow-lg">
+                                        <i class="fas fa-book text-sm"></i>
+                                    </div>
+                                    <div class="font-medium text-slate-900 text-sm">Materi</div>
+                                </div>
+
+                                <ul class="space-y-2 mb-4">
+                                    <li
+                                        class="relative pl-6 text-sm text-slate-700 before:absolute before:left-0 before:text-indigo-500 before:font-bold before:content-['▸']">
+                                        Pengertian dokumentasi teknis
+                                    </li>
+                                    <li
+                                        class="relative pl-6 text-sm text-slate-700 before:absolute before:left-0 before:text-indigo-500 before:font-bold before:content-['▸']">
+                                        Pentingnya dokumentasi di dunia kerja IT
+                                    </li>
+                                    <li
+                                        class="relative pl-6 text-sm text-slate-700 before:absolute before:left-0 before:text-indigo-500 before:font-bold before:content-['▸']">
+                                        Membuat laporan instalasi jaringan
+                                    </li>
+                                    <li
+                                        class="relative pl-6 text-sm text-slate-700 before:absolute before:left-0 before:text-indigo-500 before:font-bold before:content-['▸']">
+                                        Diagram jaringan sederhana
+                                    </li>
+                                    <li
+                                        class="relative pl-6 text-sm text-slate-700 before:absolute before:left-0 before:text-indigo-500 before:font-bold before:content-['▸']">
+                                        Tools dokumentasi (Word, Draw.io)
+                                    </li>
+                                </ul>
+
+                                <a href="#"
+                                    class="pdf-button inline-flex items-center gap-2 px-4 py-2.5 bg-white/80 backdrop-blur-sm text-slate-800 font-medium text-sm rounded-xl shadow-xl hover:shadow-2xl hover:-translate-y-0.5 hover:bg-white/100 border border-slate-200/50 transition-all duration-300">
+                                    <i class="fas fa-file-pdf text-slate-500"></i>
+                                    <span>PDF Materi</span>
+                                </a>
+                            </div>
+
+                            <!-- Latihan -->
+                            <div class="content-section pt-6 pb-6 px-6 border-t border-slate-100">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <div
+                                        class="w-9 h-9 bg-gradient-to-br from-red-500 to-rose-500 rounded-xl flex items-center justify-center text-white shadow-lg">
+                                        <i class="fas fa-edit text-sm"></i>
+                                    </div>
+                                    <div class="font-medium text-slate-900 text-sm">Latihan</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Pertemuan 8 -->
+                    <div
+                        class="accordion-item bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+                        <div class="accordion-header px-6 py-5 cursor-pointer flex items-center justify-between hover:bg-slate-50 transition-colors"
+                            onclick="toggleAccordion(this)">
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="w-8 h-8 flex-shrink-0 bg-gradient-to-br from-indigo-500 to-cyan-500 rounded-lg flex items-center justify-center text-white text-xs font-bold shadow-lg">
+                                    8
+                                </div>
+                                <div class="font-medium text-slate-900 text-base leading-tight">
+                                    Mini Project: Implementasi Jaringan Sederhana
+                                </div>
+                            </div>
+                            <button
+                                class="w-10 h-10 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-500 flex items-center justify-center transition-all duration-200 group">
+                                <i
+                                    class="fas fa-chevron-down transition-transform duration-300 group-hover:scale-110"></i>
+                            </button>
+                        </div>
+
+                        <div
+                            class="accordion-content max-h-0 overflow-hidden bg-gradient-to-b from-slate-50/50 to-transparent">
+
+                            <!-- Tujuan -->
+                            <div class="content-section pt-6 pb-4 px-6 border-t border-slate-100 last:border-b">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <div
+                                        class="w-9 h-9 bg-gradient-to-br from-amber-500 to-orange-500 rounded-xl flex items-center justify-center text-white shadow-lg">
+                                        <i class="fas fa-bullseye text-sm"></i>
+                                    </div>
+                                    <div class="font-medium text-slate-900 text-sm">Tujuan Pembelajaran</div>
+                                </div>
+                                <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                    Mampu mengimplementasikan jaringan LAN sederhana secara end-to-end serta membuat
+                                    dokumentasi hasil pekerjaan.
+                                </p>
+                            </div>
+
+                            <!-- Materi / Kegiatan -->
+                            <div class="content-section pt-6 pb-4 px-6 border-t border-slate-100 last:border-b">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <div
+                                        class="w-9 h-9 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-xl flex items-center justify-center text-white shadow-lg">
+                                        <i class="fas fa-book text-sm"></i>
+                                    </div>
+                                    <div class="font-medium text-slate-900 text-sm">Materi / Kegiatan</div>
+                                </div>
+
+                                <ul class="space-y-2 mb-4">
+                                    <li
+                                        class="relative pl-6 text-sm text-slate-700 before:absolute before:left-0 before:text-indigo-500 before:font-bold before:content-['▸']">
+                                        Perancangan topologi jaringan sederhana
+                                    </li>
+                                    <li
+                                        class="relative pl-6 text-sm text-slate-700 before:absolute before:left-0 before:text-indigo-500 before:font-bold before:content-['▸']">
+                                        Instalasi dan konfigurasi IP Address
+                                    </li>
+                                    <li
+                                        class="relative pl-6 text-sm text-slate-700 before:absolute before:left-0 before:text-indigo-500 before:font-bold before:content-['▸']">
+                                        Koneksi antar perangkat dalam jaringan LAN
+                                    </li>
+                                    <li
+                                        class="relative pl-6 text-sm text-slate-700 before:absolute before:left-0 before:text-indigo-500 before:font-bold before:content-['▸']">
+                                        Sharing file antar komputer
+                                    </li>
+                                    <li
+                                        class="relative pl-6 text-sm text-slate-700 before:absolute before:left-0 before:text-indigo-500 before:font-bold before:content-['▸']">
+                                        Pengujian koneksi (ping test)
+                                    </li>
+                                    <li
+                                        class="relative pl-6 text-sm text-slate-700 before:absolute before:left-0 before:text-indigo-500 before:font-bold before:content-['▸']">
+                                        Pembuatan laporan dan dokumentasi jaringan
+                                    </li>
+                                    <li
+                                        class="relative pl-6 text-sm text-slate-700 before:absolute before:left-0 before:text-indigo-500 before:font-bold before:content-['▸']">
+                                        Presentasi hasil project
+                                    </li>
+                                </ul>
+
+                                <a href="#"
+                                    class="pdf-button inline-flex items-center gap-2 px-4 py-2.5 bg-white/80 backdrop-blur-sm text-slate-800 font-medium text-sm rounded-xl shadow-xl hover:shadow-2xl hover:-translate-y-0.5 hover:bg-white/100 border border-slate-200/50 transition-all duration-300">
+                                    <i class="fas fa-file-pdf text-slate-500"></i>
+                                    <span>PDF Panduan Project</span>
+                                </a>
+                            </div>
+
+                            <!-- Penilaian -->
+                            <div class="content-section pt-6 pb-6 px-6 border-t border-slate-100">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <div
+                                        class="w-9 h-9 bg-gradient-to-br from-red-500 to-rose-500 rounded-xl flex items-center justify-center text-white shadow-lg">
+                                        <i class="fas fa-edit text-sm"></i>
+                                    </div>
+                                    <div class="font-medium text-slate-900 text-sm">Penilaian</div>
+                                </div>
+
+                                <ul class="space-y-2">
+                                    <li class="text-sm text-slate-700">• Kesesuaian topologi jaringan</li>
+                                    <li class="text-sm text-slate-700">• Keberhasilan konfigurasi</li>
+                                    <li class="text-sm text-slate-700">• Koneksi antar perangkat</li>
+                                    <li class="text-sm text-slate-700">• Kerapihan dokumentasi</li>
+                                    <li class="text-sm text-slate-700">• Presentasi hasil</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </main>
+            </div>
+
+            <!-- Kelas 11 & 12 (similar structure) -->
+            <div id="kelas11" class="kelas-content hidden">
+
+                <!-- TAB KK / MPP -->
+                <div class="flex gap-2 mb-5">
+                    <button
+                        class="mapel-tab flex-1 px-4 py-3 bg-gradient-to-r from-indigo-500 to-cyan-500 text-white rounded-xl font-medium text-sm shadow-lg transition-all duration-300"
+                        data-mapel="kk-k11">
+                        Konsentrasi Keahlian
+                    </button>
+                    <button
+                        class="mapel-tab flex-1 px-4 py-3 bg-slate-100 text-slate-600 rounded-xl font-medium text-sm shadow-sm transition-all duration-300"
+                        data-mapel="mpp-k11">
+                        Mata Pelajaran Pilihan
+                    </button>
+                </div>
+
+                <!-- ================= KK ================= -->
+                <div id="kk-k11" class="mapel-content">
+                    <div class="flex gap-2 mb-5">
+                        <button
+                            class="semester-tab flex-1 px-4 py-3 bg-gradient-to-r from-emerald-500 to-emerald-600 text-white rounded-xl font-medium text-sm shadow-lg"
+                            data-semester="semester1-kk-k11">
+                            Semester I
+                        </button>
+                        <button
+                            class="semester-tab flex-1 px-4 py-3 bg-slate-100 text-slate-600 rounded-xl font-medium text-sm shadow-sm"
+                            data-semester="semester2-kk-k11">
+                            Semester II
+                        </button>
+                    </div>
+
+                    <main id="semester1-kk-k11" class="main-content">
+                        <p class="text-slate-500 text-sm text-center">Materi KK Semester I</p>
+                    </main>
+
+                    <main id="semester2-kk-k11" class="main-content hidden">
+                        <p class="text-slate-500 text-sm text-center">Materi KK Semester II</p>
+                    </main>
+                </div>
+
+                <!-- ================= MPP ================= -->
+                <div id="mpp-k11" class="mapel-content hidden">
+                    <div class="flex gap-2 mb-5">
+                        <button
+                            class="semester-tab flex-1 px-4 py-3 bg-gradient-to-r from-emerald-500 to-emerald-600 text-white rounded-xl font-medium text-sm shadow-lg"
+                            data-semester="semester1-mpp-k11">
+                            Semester I
+                        </button>
+                        <button
+                            class="semester-tab flex-1 px-4 py-3 bg-slate-100 text-slate-600 rounded-xl font-medium text-sm shadow-sm"
+                            data-semester="semester2-mpp-k11">
+                            Semester II
+                        </button>
+                    </div>
+
+                    <main id="semester1-mpp-k11" class="main-content">
+                        <p class="text-slate-500 text-sm text-center">Materi MPP Semester I</p>
+                    </main>
+
+                    <main id="semester2-mpp-k11" class="main-content hidden">
+                        <p class="text-slate-500 text-sm text-center">Materi MPP Semester II</p>
+                    </main>
+                </div>
+
+            </div>
+
+            <div id="kelas12" class="kelas-content hidden">
+                <div class="flex gap-2 mb-5">
+                    <button
+                        class="semester-tab flex-1 px-4 py-3 bg-gradient-to-r from-emerald-500 to-emerald-600 text-white rounded-xl font-medium text-sm shadow-lg hover:shadow-xl transition-all duration-300 active:scale-[0.98]"
+                        data-semester="semester1-k12">
+                        Semester I
+                    </button>
+                    <button
+                        class="semester-tab flex-1 px-4 py-3 bg-slate-100 text-slate-600 rounded-xl font-medium text-sm shadow-sm hover:shadow-md hover:bg-slate-200 transition-all duration-300"
+                        data-semester="semester2-k12">
+                        Semester II
+                    </button>
+                </div>
+                <main id="semester1-k12" class="main-content space-y-4">
+                    <div class="text-center py-12">
+                        <div class="w-20 h-20 mx-auto mb-4 bg-slate-100 rounded-2xl flex items-center justify-center">
+                            <i class="fas fa-clock text-2xl text-slate-400"></i>
+                        </div>
+                        <h3 class="text-slate-600 font-medium mb-2">Semester I Kelas XII</h3>
+                        <p class="text-slate-500 text-sm">Materi akan segera ditambahkan</p>
+                    </div>
+                </main>
+                <main id="semester2-k12" class="main-content space-y-4 hidden">
+                    <div class="text-center py-12">
+                        <div class="w-20 h-20 mx-auto mb-4 bg-slate-100 rounded-2xl flex items-center justify-center">
+                            <i class="fas fa-clock text-2xl text-slate-400"></i>
+                        </div>
+                        <h3 class="text-slate-600 font-medium mb-2">Semester II Kelas XII</h3>
+                        <p class="text-slate-500 text-sm">Materi akan segera ditambahkan</p>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-10">
+
+        <div
+            class="max-w-2xl mx-auto bg-white/80 backdrop-blur-sm border border-slate-200/50 rounded-2xl shadow-lg p-6 text-center">
+
+            <div class="flex justify-center gap-4 mb-4 text-slate-500 text-xl">
+                <a href="https://github.com/masedo23" class="hover:text-indigo-500 transition">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://api.whatsapp.com/send/?phone=6283152643338&text&type=phone_number&app_absent=0"
+                    class="hover:text-indigo-500 transition">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+
+            <p class="text-slate-400 text-xs">
+                © 2026 Edo Sudrajat. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script>
+        // Kelas tabs
+        document.querySelectorAll('.kelas-tab').forEach(tab => {
+            tab.addEventListener('click', (e) => {
+
+                document.querySelectorAll('.kelas-tab').forEach(t => {
+                    t.classList.remove('bg-gradient-to-r', 'from-indigo-500', 'to-cyan-500', 'text-white');
+                    t.classList.add('bg-slate-100', 'text-slate-700');
+                });
+
+                document.querySelectorAll('.kelas-content').forEach(c => {
+                    c.classList.add('hidden');
+                });
+
+                const btn = e.currentTarget;
+
+                btn.classList.remove('bg-slate-100', 'text-slate-700');
+                btn.classList.add('bg-gradient-to-r', 'from-indigo-500', 'to-cyan-500', 'text-white');
+
+                document.getElementById(btn.dataset.kelas).classList.remove('hidden');
+            });
+        });
+
+        // Semester tabs
+        document.querySelectorAll('.semester-tab').forEach(tab => {
+            tab.addEventListener('click', (e) => {
+
+                const parent = e.currentTarget.closest('.kelas-content');
+                const allTabs = parent.querySelectorAll('.semester-tab');
+                const allMains = parent.querySelectorAll('.main-content');
+
+                allTabs.forEach(t => {
+                    t.classList.remove('bg-gradient-to-r', 'from-emerald-500', 'to-emerald-600', 'text-white', 'shadow-lg');
+                    t.classList.add('bg-slate-100', 'text-slate-600');
+                });
+
+                allMains.forEach(m => m.classList.add('hidden'));
+
+                const btn = e.currentTarget;
+
+                btn.classList.remove('bg-slate-100', 'text-slate-600');
+                btn.classList.add('bg-gradient-to-r', 'from-emerald-500', 'to-emerald-600', 'text-white', 'shadow-lg');
+
+                document.getElementById(btn.dataset.semester).classList.remove('hidden');
+            });
+        });
+
+        function toggleAccordion(header) {
+            const content = header.nextElementSibling;
+            const icon = header.querySelector('i');
+            const isActive = content.classList.contains('max-h-[1500px]');
+
+            // Close all in container
+            header.closest('.main-content').querySelectorAll('.accordion-content').forEach(acc => {
+                acc.classList.remove('max-h-[1500px]');
+                acc.previousElementSibling.querySelector('i').style.transform = 'rotate(0deg)';
+            });
+
+            if (!isActive) {
+                content.classList.add('max-h-[1500px]');
+                icon.style.transform = 'rotate(180deg)';
+            }
+        }
+
+        // Close on outside click
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.accordion-item')) {
+                document.querySelectorAll('.accordion-content').forEach(acc => {
+                    acc.classList.remove('max-h-[1500px]');
+                    acc.previousElementSibling.querySelector('i').style.transform = 'rotate(0deg)';
+                });
+            }
+        });
+
+        // MAPEL TAB (KK / MPP)
+        document.querySelectorAll('.mapel-tab').forEach(tab => {
+            tab.addEventListener('click', (e) => {
+
+                const parent = e.currentTarget.closest('.kelas-content');
+
+                parent.querySelectorAll('.mapel-tab').forEach(t => {
+                    t.classList.remove('bg-gradient-to-r', 'from-indigo-500', 'to-cyan-500', 'text-white');
+                    t.classList.add('bg-slate-100', 'text-slate-600');
+                });
+
+                parent.querySelectorAll('.mapel-content').forEach(c => {
+                    c.classList.add('hidden');
+                });
+
+                const btn = e.currentTarget;
+
+                btn.classList.remove('bg-slate-100', 'text-slate-600');
+                btn.classList.add('bg-gradient-to-r', 'from-indigo-500', 'to-cyan-500', 'text-white');
+
+                document.getElementById(btn.dataset.mapel).classList.remove('hidden');
+            });
+        });
+    </script>
+</body>
+
+</html>
